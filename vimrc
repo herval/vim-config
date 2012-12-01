@@ -156,3 +156,10 @@ else
     source ~/.vimrc.local
   endif
 endif
+
+
+" Machine-local vim settings - keep this at the end
+" --------------------------
+silent! source ~/.vimrc.local
+
+colorscheme github
