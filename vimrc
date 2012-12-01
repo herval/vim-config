@@ -162,4 +162,3 @@ endif
 " --------------------------
 silent! source ~/.vimrc.local
 
-colorscheme github
