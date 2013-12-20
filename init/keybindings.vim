@@ -79,6 +79,22 @@ vmap <s-tab> <gv
 
 map <leader>rt :!~/.vim/bin/update_ctags 2>/dev/null &<CR>
 
+" FuzzyFinder and switchback commands
+map <leader>e   :e#<CR>
+map <leader>b   :FufBuffer<CR>
+map <leader><C-N> :FufFile **/<CR>
+map <D-e> :FufBuffer<CR>
+map <leader>n :FufFile **/<CR>
+map <D-N> :FufFile **/<CR>
+
+" refresh the FuzzyFinder cache
+map <leader>rf :FufRenewCache<CR>
+
+" Command-T
+map <D-N>       :CommandTFlush<CR>:CommandT<CR>
+map <C-N>       :CommandTFlush<CR>:CommandT<CR>
+map <leader>f   :CommandTFlush<CR>:CommandT<CR>
+
 " Git blame
 map <leader>g   :Gblame<CR>
 
