@@ -24,6 +24,10 @@ else
 
   call vundle#begin()
 
+filetype off                    " Avoid a Vim/Pathogen bug
+call pathogen#helptags()
+call pathogen#incubate()
+
   Plugin 'VundleVim/Vundle.vim'
 
   "
